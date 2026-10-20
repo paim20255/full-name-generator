@@ -6,17 +6,26 @@ public class FullNameApplication {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Please enter your name: ");
-        String firstname = input.nextLine();
-        System.out.println("First name: " + firstname);
+        String firstName;
+        String middleName;
+        String lastName;
+        String suffix;
+        String fullName = "";
+
+
+        System.out.print("Please enter your name: ");
+        firstName = input.nextLine();
+        fullName += firstName;
+        System.out.println("First name: " + firstName);
+
+        System.out.println("Middle name: ");
+        middleName = input.nextLine();
+        fullName += middleName;
+        System.out.println("Middle name: " + middleName);
 
 
 
 
-
-        String middleName = "";
-        String lastName = "Williams   ";
-        String suffix = "   PHD";
 
     }
 }
