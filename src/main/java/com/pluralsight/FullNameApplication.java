@@ -12,16 +12,27 @@ public class FullNameApplication {
         String suffix;
         String fullName = "";
 
-
-        System.out.print("Please enter your name: ");
+        System.out.print("Please enter your name \n" );
+        System.out.print("First name: ");
         firstName = input.nextLine();
-        fullName += firstName;
-        System.out.println("First name: " + firstName);
+        fullName += firstName + " ";
 
-        System.out.println("Middle name: ");
+        System.out.print("Middle name: ");
         middleName = input.nextLine();
-        fullName += middleName;
-        System.out.println("Middle name: " + middleName);
+        fullName += middleName + " ";
+
+        System.out.print("Last name: ");
+        lastName = input.nextLine();
+        fullName += lastName + " ";
+
+        System.out.print("Suffix: ");
+        suffix = input.nextLine();
+        fullName += suffix;
+
+        System.out.print("Your full name: " + fullName);
+
+
+
 
 
 
