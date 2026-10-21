@@ -19,7 +19,6 @@ public class FullNameApplication {
 
         System.out.print("Middle name: ");
         middleName = input.nextLine();
-        fullName += middleName + " ";
 
         System.out.print("Last name: ");
         lastName = input.nextLine();
@@ -27,9 +26,17 @@ public class FullNameApplication {
 
         System.out.print("Suffix: ");
         suffix = input.nextLine();
-        fullName += suffix;
 
-        System.out.print("Your full name: " + fullName);
+        if (! middleName.isEmpty() ) {
+            fullName = fullName + " " + middleName;
+        }
+
+        if (! suffix.isEmpty() ) {
+            fullName += ", " + suffix;
+        }
+
+
+        System.out.println("Your full name: " + fullName);
 
 
 
